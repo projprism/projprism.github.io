@@ -1,0 +1,15 @@
+---
+title: Inorganic Chemistry
+layout: main
+---
+
+{% assign files = site.static_files | where_exp: "x", "x.path contains 'assets/files/chemistry/inorganic'" | sort:"path" %}
+
+{% for file in files %}
+<a href="{{ file.path }}" class="link-box" target="_blank">
+<div class="link-content">
+    <div class="link-title">{{ file.name | }}</div>
+</div>
+<div class="link-arrow">→</div>
+</a>
+{% endfor %}

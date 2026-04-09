@@ -1,0 +1,10 @@
+- name: home
+  link: /
+- name: resources
+  link: /resources/
+- name: physics
+  link: /resources/physics/
+- name: chemistry
+  link: /resources/chemistry/
+- name: biology
+  link: /resources/biology/

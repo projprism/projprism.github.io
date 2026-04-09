@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  </head>
+  <body>
+    {% include navigation.html %}
+    
+    <!-- theme switcher -->
+    <button class="toggle-btn" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
+    <div class="toggle-knob">
+        <span id="toggle-icon">☀️</span>
+    </div>
+    </button>
+
+    <div class="card">
+
+    <!-- profile -->
+    <div class="avatar-wrap">
+        <img class="avatar" src={{ "/assets/images/logo.png" | relative_url}} alt="Project PRISM" />
+    </div>
+
+    <!-- header -->
+    <div class="name">Project PRISM</div>
+    <div class="handle"><a href="https://www.instagram.com/projectprismofficial">@projectprismofficial</a></div>
+    <p class="bio">
+        Youth-led initiative providing free learning resources beyond the school curriculum
+    </p>
+
+    <div class="divider"></div>
+
+    <!-- links -->
+    <div class="links">
+
+    {{ content }}
+
+    
+    </div>
+
+    <div class="footer">Project PRISM</div>
+
+    </div>
+
+    <script src="{{ "/assets/js/script.js" | relative_url }}"></script>
+  </body>
+</html>

@@ -1,93 +1,51 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Links</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- theme switcher -->
-  <button class="toggle-btn" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
-    <div class="toggle-knob">
-      <span id="toggle-icon">☀️</span>
-    </div>
-  </button>
+---
+title: Project Prism | Home
+layout: main
+---
 
-  <div class="card">
+<!-- learning resources -->
+<a href="{{ "/resources/index.html" | relative_url }}" class="link-box">
+<div class="link-icon">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </svg>
+</div>
+<div class="link-content">
+    <div class="link-title">Learning Resources</div>
+    <div class="link-desc">Access our materials here</div>
+</div>
+<div class="link-arrow">→</div>
+</a>
 
-    <!-- profile -->
-    <div class="avatar-wrap">
-      <img class="avatar" src="logo.png" alt="Project PRISM" />
-    </div>
+<!-- feedback form -->
+<a href="https://forms.gle/Sz9iWWQRov5pDRYm7" class="link-box">
+<div class="link-icon">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="9" y="2" width="6" height="4" rx="1"/>
+    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+    <path d="M9 12h6"/>
+    <path d="M9 16h4"/>
+    </svg>
+</div>
+<div class="link-content">
+    <div class="link-title">Feedback Form</div>
+    <div class="link-desc">Share your thoughts and suggestions with us!</div>
+</div>
+<div class="link-arrow">→</div>
+</a>
 
-    <!-- header -->
-    <div class="name">Project PRISM</div>
-    <div class="handle"><a href="https://www.instagram.com/projectprismofficial">@projectprismofficial</a></div>
-    <p class="bio">
-      Youth-led initiative providing free learning resources beyond the school curriculum
-    </p>
-
-    <div class="divider"></div>
-
-    <!-- links -->
-    <div class="links">
-
-      <!-- learning resources -->
-      <a href="https://drive.google.com/drive/folders/1fPmzgZmkBSiILqnlqVdPEUqlh6Gq7j56?usp=sharing" class="link-box">
-        <div class="link-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-          </svg>
-        </div>
-        <div class="link-content">
-          <div class="link-title">Learning Resources</div>
-          <div class="link-desc">Access our materials here</div>
-        </div>
-        <div class="link-arrow">→</div>
-      </a>
-
-      <!-- feedback form -->
-      <a href="https://forms.gle/Sz9iWWQRov5pDRYm7" class="link-box">
-        <div class="link-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="9" y="2" width="6" height="4" rx="1"/>
-            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
-            <path d="M9 12h6"/>
-            <path d="M9 16h4"/>
-          </svg>
-        </div>
-        <div class="link-content">
-          <div class="link-title">Feedback Form</div>
-          <div class="link-desc">Share your thoughts and suggestions with us!</div>
-        </div>
-        <div class="link-arrow">→</div>
-      </a>
-
-      <!-- youtube channel (pending) -->
-      <a href="" class="link-box">
-        <div class="link-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
-            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
-          </svg>
-        </div>
-        <div class="link-content">
-          <div class="link-title">YouTube Channel</div>
-          <div class="link-desc">Coming soon...</div>
-        </div>
-        <div class="link-arrow">→</div>
-      </a>
-
-    </div>
-
-    <div class="footer">Project PRISM</div>
-
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<!-- youtube channel (pending) -->
+<a href="" class="link-box">
+<div class="link-icon">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
+    </svg>
+</div>
+<div class="link-content">
+    <div class="link-title">YouTube Channel</div>
+    <div class="link-desc">Coming soon...</div>
+</div>
+<div class="link-arrow">→</div>
+</a>

@@ -10,6 +10,7 @@
 [data-theme="light"] {
   --bg:           #f5f4f0;
   --card:         #ffffff;
+  --navbar:         #ffffff;
   --border:       rgba(0, 0, 0, 0.08);
   --text:         #1a1a1a;
   --muted:        #888888;
@@ -28,6 +29,7 @@
 [data-theme="dark"] {
   --bg:           #0e0e0f;
   --card:         #161618;
+  --navbar:       #161618;
   --border:       rgba(255, 255, 255, 0.07);
   --text:         #e8e8e8;
   --muted:        #888888;
@@ -49,6 +51,7 @@ html {
 
 body,
 .card,
+.navbar,
 .link-box,
 .toggle-btn,
 .avatar-placeholder,
@@ -57,6 +60,7 @@ body,
 .handle,
 .bio,
 .divider,
+.navbardivider,
 .footer,
 .link-title {
   transition:
@@ -313,4 +317,36 @@ body {
   font-size: 12px;
   color: var(--footer-color);
   letter-spacing: 0.3px;
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+}
+
+.navbar>div {
+  // align-items: center;
+  background: var(--navbar);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  // display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.navbar>div>a {
+  text-decoration: none;
+}
+
+.navbardivider {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  margin: 5px;
+}
+
+.current {
+  font-weight: 700;
 }

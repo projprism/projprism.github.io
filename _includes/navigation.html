@@ -1,0 +1,14 @@
+<nav class="navbar">
+<div>
+<p1>{{page.url}}</p1>
+<div class="navbardivider"></div>
+{% for item in site.data.navigation %}
+{% unless forloop.last%}
+<a href="{{item.link | relative_url}}" {% if page.url == item.link %} class="current" {% endif%}>{{item.name}}</a>
+<div class="navbardivider"></div>
+{% else %}
+<a href="{{item.link | relative_url}}" {% if page.url == item.link %} class="current" {% endif%}>{{item.name}}</a>
+{% endunless %}
+{% endfor %}
+</div>
+</nav>

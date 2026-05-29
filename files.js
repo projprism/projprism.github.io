@@ -18,7 +18,9 @@ const FILES = [
 
   // PHYSICS
   "Olympiad Resources/Physics/PRISM Physics - Syllabus Overview.pdf",
+  "Olympiad Resources/Physics/PRISM Physics - Vectors",
+  "Olympiad Resources/Physics/PRISM Physics - Mechanics",
 
   // OTHERS
-  "Other Resources/PRISM Interview Preparation Notes.pdf",
+  "Other Resources/PRISM Interview Preparation Notes.pdf"
 ];
